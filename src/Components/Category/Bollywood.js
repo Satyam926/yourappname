@@ -2,6 +2,7 @@
 import { useContext } from 'react'
 import { CategoryContext } from '../../CategoryContext'
 import {Link} from 'react-router-dom'
+import TopArticle from '../TopArticle'
 const Bollywood = () => {
     const [data]= useContext(CategoryContext)
 console.log(data)
@@ -27,7 +28,7 @@ console.log(data)
       <div style={{ margin: "76px" }} >
         <div className='Advertistement'>Advertistement</div>
         <div className='homeLatestTxt'><div className='TxtBorder'>The </div> Top</div>
-        {/* <TopArtWebsite /> */}
+        <TopArticle/>
       </div>
     </div>
     )
